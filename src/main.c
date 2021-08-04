@@ -14,7 +14,7 @@ int main()
 	memset(key,0,sizeof(key));
 	while (true)
 	{
-		for(int i = 0; i < 0xff; i++) {
+		for(int i = 8; i < 0xff; i++) {//0~7はマウス
 			if(GetAsyncKeyState(i) && !key[i]){
 				key[i] = true;
 				switch(i){
